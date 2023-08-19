@@ -6,7 +6,7 @@
 	var projectsArray = [
 		{
 			"id": "kaggle",
-			"url": "https://www.kaggle.com/mohammaddhikri"
+			"url": "https://www.datacamp.com/portfolio/mohammaddhikriskom"
 		},
 		{
 			"id": "github",
