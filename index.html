@@ -33,7 +33,7 @@
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<!-- Flexslider  -->
 	<link rel="stylesheet" href="css/flexslider.css">
 	<!-- Owl Carousel -->
@@ -52,64 +52,30 @@
 
 <body>
 	<div id="colorlib-page">
+		<!-- <nav class="navbar navbar-expand-lg bg-light" >
+			<div class="container-fluid">
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav> -->
 		<div class="container-wrap">
-			<!-- Navbar Toggle Button -->
-			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
-				aria-expanded="false" aria-controls="navbar"><i></i></a>
 
-			<!-- Left navbar -->
-			<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-				<div class="text-center">
-					<div class="author-img" style="background-image: url(images/photo_2023-02-208.jpg);"></div>
-					<h1 id="colorlib-logo"><a href="index.html">Mohammad Dhikri</a></h1>
-					<span class="position"><a href="#"><b>Data Analyst, Data Scientist <br> and Software Engineer</b></a></span>
-					<!-- <div class="row">
-						<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInRight">
-								<a href="https://github.com/Dhik/nhtsa_crash_analysis"><img src="https://i.ibb.co/fkGhFs0/data-scientist-associate-banner.png"
-										class="img-responsive ic" alt=""></a>
-						</div>
-						<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInRight">
-								<a href="#"><img src="https://i.ibb.co/6tRmJjR/data-analyst-associate-badge.png"
-										class="img-responsive ic" alt=""></a>
-						</div>
-					</div> -->
-				</div>
-				<!-- Navbar Items -->
-				<nav id="colorlib-main-menu" role="navigation" class="navbar">
-					<div id="navbar" class="collapse">
-						<ul>
-							<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-							<li><a href="#" data-nav-section="about">About</a></li>
-							<li><a href="#" data-nav-section="work">Portfolio</a></li>
-							<li><a href="#" data-nav-section="services">Work</a></li>
-							<!-- <li><a href="#" data-nav-section="skills">Skills</a></li> -->
-							<li><a href="#" data-nav-section="education">Education</a></li>
-							<!-- <li><a href="#" data-nav-section="experience">Experience</a></li> -->
-
-							<li><a href="blog/index.html" data-nav-section="blog">Achievements</a></li>
-							<li><a href="#" data-nav-section="contact">Contact</a></li>
-						</ul>
-					</div>
-				</nav>
-				<!-- Navbar Footer -->
-				<div class="colorlib-footer">
-					<ul>
-						<li><a href="https://www.linkedin.com/in/mohammad-dhikri-aba4a61a0/" target="_blank" title="LinkedIn"><i
-									class="icon-social-linkedin"></i></a></li>
-						<li><a href="https://github.com/dhik" target="_blank" title="GitHub"><i
-									class="icon-social-github"></i></a>
-						</li>
-						<li><a href="mailto:mohammaddhikri@gmail.com" title="Email"><i class="icon-mail"></i></a>
-						</li>
-					</ul>
-				</div>
-			</aside>
-
-			<div id="colorlib-main">
+			<div>
 				<section id="colorlib-hero" class="js-fullheight" data-section="home">
 					<div class="flexslider js-fullheight">
 						<ul class="slides">
-							<li style="background-image: url(images/bg2_.jpg);">
+							<li style="background-image: url(images/bg.jpg);">
 								<div class="overlay"></div>
 								<div class="container-fluid transparent-overlay">
 									<div class="row">
@@ -139,50 +105,56 @@
 										<div class="about-desc">
 											<span class="heading-meta">About</span>
 											<h2 class="colorlib-heading">Aspiring Data Analyst Ready to Make an Impact</h2>
-											<p><strong>Hi I'm Dhikri,</strong><br>
-												Highly motivated data scientist with a strong background in computer science. Proficient in SQL, Power BI, Tableau,
-Python, Pandas, NumPy, TensorFlow, and PyTorch. Skilled in analyzing complex datasets, creating visualizations, and
-developing user-friendly applications. Proven track record in sentiment analysis, public transportation efficiency, and
-handling housing and transportation issues. Certified Data Analyst and Data Scientist. Strong leadership, adaptability, and
-analytical skills. Excellent academic record and passion for teaching. Valuable asset for data-driven projects and teams.
-											</p>
+											<div class="row">
+												<div class="col-md-8"><p><strong>Hi I'm Dhikri,</strong><br>
+													Highly motivated data scientist with a strong background in computer science. Proficient in SQL, Power BI, Tableau,
+	Python, Pandas, NumPy, TensorFlow, and PyTorch. Skilled in analyzing complex datasets, creating visualizations, and
+	developing user-friendly applications. Proven track record in sentiment analysis, public transportation efficiency, and
+	handling housing and transportation issues. Certified Data Analyst and Data Scientist. Strong leadership, adaptability, and
+	analytical skills. Excellent academic record and passion for teaching. Valuable asset for data-driven projects and teams.
+												</p></div>
+												<div class="col-md-4">
+													<div class="blog-entry">
+														<a href="#" class="blog-img"><img src="https://i.ibb.co/WVc1MnL/photo-2023-02-208.jpg"
+																class="img-responsive" alt=""></a>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-4 animate-box" data-animate-effect="fadeInRight">
+									<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
 										<div class="services color-5">
 											<span class="icon2"><i class="icon-star"></i></span>
 											<h3>Problem Solver</h3>
 										</div>
 									</div>
-									<div class="col-md-4 animate-box" data-animate-effect="fadeInTop">
+									<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInTop">
 										<div class="services color-2">
 											<span class="icon2"><i class="icon-chart-line"></i></span>
 											<h3>Analytics Enthusiast</h3>
 										</div>
 									</div>
-									<div class="col-md-4 animate-box" data-animate-effect="fadeInBottom">
+									<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInBottom">
 										<div class="services color-4">
 											<span class="icon2"><i class="icon-point-of-interest"></i></span>
 											<h3>Fast Learner</h3>
 										</div>
 									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-4 animate-box" data-animate-effect="fadeInRight">
+									<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
 										<div class="services color-4">
 											<span class="icon2"><i class="icon-group"></i></span>
 											<h3>Team Work</h3>
 										</div>
 									</div>
-									<div class="col-md-4 animate-box" data-animate-effect="fadeInTop">
+									<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInTop">
 										<div class="services color-3">
 											<span class="icon2"><i class="icon-flow-merge"></i></span>
 											<h3>Creative</h3>
 										</div>
 									</div>
-									<div class="col-md-4 animate-box" data-animate-effect="fadeInBottom">
+									<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInBottom">
 										<div class="services color-2">
 											<span class="icon2"><i class="icon-refresh"></i></span>
 											<h3>Self Motivation</h3>
@@ -205,197 +177,9 @@ analytical skills. Excellent academic record and passion for teaching. Valuable 
 					</div>
 				</section>
 
-				<section class="colorlib-blog" data-section="work">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Documentation of Research and Project</span>
-								<h2 class="colorlib-heading">My Programs Documentary</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="#" class="blog-img"><img src="https://i.ibb.co/HgyVTVZ/ifest2.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="#">Informatics Festival 2021 Web App</a></h3>
-										<p>Project Web Development for Annual Event (use Laravel). <br/> As Project Manager and Frontend Developer</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="#" class="blog-img"><img src="https://i.ibb.co/yq5rkg2/booklet2.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="#">Booklet Web App</a></h3>
-										<p>Project Web Development for Annual Event (use Laravel). <br/> As Fullstack Developer</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="#" class="blog-img"><img src="https://i.ibb.co/TMr3cdJ/budayaku.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="#">BudayaKu Web App</a></h3>
-										<p>as Fullstack Developer with Laravel</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="#" class="blog-img"><img src="https://i.ibb.co/wy7dqJ9/wedd.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="#">Weddlex Web App</a></h3>
-										<p>as Fullstack Developer with Lumen Laravel</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="#" class="blog-img"><img src="https://i.ibb.co/QCw3svb/ufarming.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="#">Ufarming App API</a></h3>
-										<p>as Backend Developer with Lumen Laravel</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="#" class="blog-img"><img src="https://i.ibb.co/s2DnDtY/bizclass.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="#">Ferma App API</a></h3>
-										<p>as Backend Developer with Lumen Laravel</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="#" class="blog-img"><img src="https://i.ibb.co/rtQ5mPn/polyclub.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="#">PolyClub App API</a></h3>
-										<p>as Backend Developer with Node Express JS</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="#" class="blog-img"><img src="https://i.ibb.co/gT6kZjx/ferma.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="#">Ferma App API</a></h3>
-										<p>as Backend Developer with Node Express JS</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="#" class="blog-img"><img src="https://i.ibb.co/ZLzkK5M/Screenshot-2023-03-25-214018.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="#">Epicentrum 2022 Web App</a></h3>
-										<p>Project Web Development for Annual Event use Laravel <br/> as Frontend Developer</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="#" class="blog-img"><img src="https://i.ibb.co/YTTDfDf/epic.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="#">Epicentrum 2021 Web App</a></h3>
-										<p>Project Web Development for Annual Event use Laravel <br/> as Frontend Developer</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="https://dhik.github.io/hta_analytics/" class="blog-img"><img src="https://i.ibb.co/Kb8Bh6b/Screenshot-2023-03-25-145122.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="https://dhik.github.io/hta_analytics/">Housing and Transport Analytics App</a></h3>
-										<p>Project Web Development in UN Big Data 2022 use HTML and CSS <br/> as Fullstack Developer</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="https://colab.research.google.com/drive/1DL0ToMDjLl7MjaiMgHuaOCFfZC6dLsFN?usp=sharing" class="blog-img"><img src="https://i.ibb.co/qsGnG6w/Screenshot-2023-03-24-152302.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="https://colab.research.google.com/drive/1DL0ToMDjLl7MjaiMgHuaOCFfZC6dLsFN?usp=sharing">Human Mobility Analytics</a></h3>
-										<p>Analytics Data with Python</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="https://prabu-2022.vercel.app/" class="blog-img"><img src="https://i.ibb.co/FgpZ9Gb/Screenshot-2023-03-25-161801.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="https://prabu-2022.vercel.app/">Prabu 2022 Web App</a></h3>
-										<p>Project Web Development use Vue.js and Express.js <br/> as Project Manager and Frontend Developer</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="https://prabu-2021-u5y6.vercel.app/" class="blog-img"><img src="https://i.ibb.co/vvvdKTd/Screenshot-2023-03-25-171528.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="https://prabu-2021-u5y6.vercel.app/">Prabu 2021 Web App</a></h3>
-										<p>Project Web Development use Vue.js and Express.js <br/> as Project Manager and Frontend Developer</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="https://dev.to/sedkis" class="blog-img"><img src="https://i.ibb.co/882SJXD/Screenshot-1588.png"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<h3><a href="https://dev.to/sedkis">Mask Detection with Residual Network Method</a></h3>
-										<p>Research for my Bachelor's Degree in Computer Science</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="https://tyk.io/author/sedkytyk-io" class="blog-img"><img src="https://i.ibb.co/D9sfdWV/Screenshot-2022-03-19-220829.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="https://tyk.io/author/sedkytyk-io/">Surveillance App in Yogyakarta</a></h3>
-										<p>Analysis Sum of Type Vehicle</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
 				<section class="colorlib-work">
 					<div class="colorlib-narrow-content">
-						<div class="row">
+						<!-- <div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
 								<span class="heading-meta">Data Analysis and Visualization</span>
@@ -424,17 +208,1036 @@ analytical skills. Excellent academic record and passion for teaching. Valuable 
 									</div>
 								</div>
 							</div>
-							<!-- <div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="https://www.coursera.org/account/accomplishments/certificate/AY3E4SS4E652" class="blog-img"><img src="https://i.ibb.co/Qj7nF3V/Coursera-Technical-Support-Fundamentals-AY3-E4-SS4-E652-page-0001.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+						</div> -->
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">Data Analysis and Visualization</span>
+								<h2 class="colorlib-heading animate-box">Portfolio <br>Data Analyst and Visualization</h2>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft" id="novypro" style="padding: 0;">
+								<div class="project" style="background-image: url(images/projects/dash9.png);">
 									<div class="desc">
-										<h3><a href="https://www.coursera.org/account/accomplishments/certificate/AY3E4SS4E652">Technical Support Fundamentals</a></h3>
-										<p>I have completed the course of Technical Support Fundamentals from Google in Coursera Platform</p>
+										<div class="con">
+											<h3><a>Power BI</a></h3>
+											<span>Analisis Hutan Mangrove Jawa Barat</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft" id="tableau" style="padding: 0;">
+								<div class="project" style="background-image: url(images/projects/dash1.png);">
+									<div class="desc">
+										<div class="con">
+											<h3><a>Tableau</a></h3>
+											<span>Analysis Produksi Aluminium di Dunia</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft" id="github" style="padding: 0;">
+								<div class="project" style="background-image: url(images/projects/dash3.png)" style="padding: 0;">
+									<div class="desc">
+										<div class="con">
+											<h3><a>Tableau</a></h3>
+											<span>Produksi vs Konsumsi Energi di Indonesia</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft" id="datacamp" style="padding: 0;">
+								<div class="project" style="background-image: url(images/projects/dash4.png)">
+									<div class="desc">
+										<div class="con">
+											<h3><a>Tableau</a></h3>
+											<span>Produksi Kayu Bulat oleh Perhutani</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft" id="datacamp" style="padding: 0;">
+								<div class="project" style="background-image: url(images/projects/dash6.png)">
+									<div class="desc">
+										<div class="con">
+											<h3><a>Tableau</a></h3>
+											<span>Analysis Candi Indonesia</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft" id="datacamp" style="padding: 0;">
+								<div class="project" style="background-image: url(images/projects/dash7.png)">
+									<div class="desc">
+										<div class="con">
+											<h3><a>Tableau</a></h3>
+											<span>Tweet Sentiment Analysis LKPP</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft" id="datacamp" style="padding: 0;">
+								<div class="project" style="background-image: url(images/projects/dash11.png)">
+									<div class="desc">
+										<div class="con">
+											<h3><a>Power BI</a></h3>
+											<span>Analysis Produksi Aluminium di Dunia 2017-2021</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft" id="datacamp" style="padding: 0;">
+								<div class="project" style="background-image: url(images/projects/db3.png)">
+									<div class="desc">
+										<div class="con">
+											<h3><a>Tableau</a></h3>
+											<span>Analysis Realisasi Produksi Kayu Bulat</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft" id="datacamp" style="padding: 0;">
+								<div class="project" style="background-image: url(images/projects/port1.png)">
+									<div class="desc">
+										<div class="con">
+											<h3><a>Human Mobility Analytics</a></h3>
+											<span>Using Python</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft" id="datacamp" style="padding: 0;">
+								<div class="project" style="background-image: url(images/projects/port2.png)">
+									<div class="desc">
+										<div class="con">
+											<h3><a>United Nation Hackathon</a></h3>
+											<span>Housing and Transport Analytics</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="col-md-3 animate-box" data-animate-effect="fadeInLeft" id="datacamp" style="padding: 0;">
+								<div class="project" style="background-image: url(images/projects/dash10.png)">
+									<div class="desc">
+										<div class="con">
+											<h3><a>DataCamp</a></h3>
+											<span>Certified Data Scientist Professional</span>
+										</div>
 									</div>
 								</div>
 							</div> -->
+							<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft" id="datacamp" style="padding: 0;">
+								<div class="project" style="background-image: url(images/projects/dash12.png)">
+									<div class="desc">
+										<div class="con">
+											<h3><a>Sentiment Analysis</a></h3>
+											<span>Analysis Sentiment for BKN</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft" id="datacamp" style="padding: 0;">
+								<div class="project" style="background-image: url(images/projects/port5.jpeg)">
+									<div class="desc">
+										<div class="con">
+											<h3><a>Sentiment Analysis</a></h3>
+											<span>Analysis Sentiment for BKN</span>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
+						
+
+
+
+
+						<section class="colorlib-experience" data-section="services">
+							<div class="colorlib-narrow-content">
+								<div class="row">
+									<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+										data-animate-effect="fadeInLeft">
+										<span class="heading-meta">Experience</span>
+										<h2 class="colorlib-heading animate-box">Work Experience</h2>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="timeline-centered">
+		
+											<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+												<div class="timeline-entry-inner">
+													<div class="timeline-icon color-1">
+														<i class="icon-code"></i>
+													</div>
+													<div class="timeline-label">
+														<h2 class="mb-2">Senior Data Scientist</h2>
+														<h4 class="mb-0"><a href="https://www.fortech.co.id/"
+																target="_blank">PT Fortech Indotama</a></h4>
+														<span class="text-muted">Feb 2023 - Current (Full time)</span>
+														<ul class="mb-0">
+															<li>
+																Scraped the website of the Forestry Service, Constitutional Court to carry out the analysis
+		process and create a visual dashboard of the analysis results with Tableau and Power BI
+															</li>
+															<li>
+																Conducted sentiment analysis from Twitter to see people's views on public policies and issues
+		that are circulating
+															</li>
+															<li>
+																Integrated data and created a database in PostgreSQL as a result of web scraping using Selenium
+		and BeautifulSoup
+															</li>
+														</ul>
+													</div>
+												</div>
+											</article>
+		
+											<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+												<div class="timeline-entry-inner">
+													<div class="timeline-icon color-2">
+														<i class="icon-code"></i>
+													</div>
+													<div class="timeline-label">
+														<h2 class="mb-2">Data Science and Python Engineer</h2>
+														<h4 class="mb-0"><a href="https://gamamulti.com/halaman-34-global-data-inspirasi-datains"
+																target="_blank">PT. Global Data Inspirasi (DataIns)</a></h4>
+														<span class="text-muted">Mar 2022 - Jan 2023 (Contract)</span>
+														<ul class="mb-0">
+															<li>
+																Experienced in analyzing data signals from gadgets using Python and Scikit-Mobility library to
+		improve public transportation services efficiency by up to 25%.
+															</li>
+															<li>
+																Skilled in building a vehicle detection engine using YoloN5 in Python for highway surveillance
+		using Redis, Laravel, and Web Socket technology, reducing monitoring process time by up to
+		60%.
+															</li>
+															<li>
+																Proficient in creating an interactive dashboard to evaluate the Ministry of Communication and
+		Informatics' performance for the last 3-5 years, contributing to the development of the ministry's
+		performance by up to 20%.
+															</li>
+															<li>
+																Expertise in developing an application website using ArcGIS and JavaScript to view population
+		density, costs, and carbon emissions per trip, simplifying the handling of housing and
+		transportation issues in big cities by up to 15%.
+															</li>
+														</ul>
+													</div>
+												</div>
+											</article>
+		
+											<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+												<div class="timeline-entry-inner">
+													<div class="timeline-icon color-3">
+														<i class="icon-code"></i>
+													</div>
+													<div class="timeline-label">
+														<h2 class="mb-2">Data Scientist</h2>
+														<h4 class="mb-0"><a href="https://kazee.id/" target="_blank">PT. Kazee Digital Indonesia</a></h4>
+														<span class="text-muted">Feb 2021 - May 2021 (Internship)</span>
+														<ul class="mb-0">
+															<li>
+																Building a ChatBot using NLU (Natural Language Understanding) with the Rasa library.
+		Adding NLU can increase satisfaction and experience by up to 30%.
+															</li>
+															<li>
+																An analysis of the results of machines built using Transformers is carried out.
+															</li>
+															<li>
+																Understand Indonesian grammar patterns to process Natural Language Generation using
+		the Transformers library. By doing this, it can improve the engine by up to 25%.
+															</li>
+														</ul>
+													</div>
+												</div>
+											</article>
+		
+											<article class="timeline-entry begin animate-box"
+												data-animate-effect="fadeInBottom">
+												<div class="timeline-entry-inner">
+													<div class="timeline-icon color-none">
+													</div>
+												</div>
+											</article>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+
+
+						<section class="colorlib-education" data-section="education">
+							<div class="colorlib-narrow-content">
+								<div class="row">
+									<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+										data-animate-effect="fadeInLeft">
+										<span class="heading-meta">Education</span>
+										<h2 class="colorlib-heading animate-box">Education</h2>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<img src="images/logo.png" class="img-responsive" style="width: 200px;"
+													alt="Western University">
+									</div>
+									<div class="col-md-4">
+										<div class="colorlib-text edu-feature__desc">
+											<h2><b>Padjadjaran University</b></h2>
+											<span class="heading-meta">(Graduated) 08/2018 - 01/2022</span>
+											<b>Bachelor of Computer Science (BsCs)</b><br>
+											<b style="font-size: 20px;">3.65 GPA</b>
+											<ul>
+												<li>
+													Major in Artificial Intelligence
+												</li>
+												<li>
+													Minor in Information System
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+
+
+
+
+						<section class="colorlib-blog" data-section="blog">
+							<div class="colorlib-narrow-content">
+								<div class="row">
+									<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+										data-animate-effect="fadeInLeft">
+										<span class="heading-meta">Certifications</span>
+										<h2 class="colorlib-heading">Achievements</h2>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+										<div class="blog-entry">
+											<a href="#" class="blog-img"><img src="https://i.ibb.co/SXKG2fc/Screenshot-2023-11-05-005710-removebg-preview.png"
+													class="img-responsive" alt=""></a>
+											<div class="desc">
+												<h3><a href="https://www.datacamp.com/certificate/DSA0015076407838">Data Scientist Professional Certificate</a></h3>
+												<p>from DataCamp 2023 - 2025</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+										<div class="blog-entry">
+											<a href="#" class="blog-img"><img src="https://i.ibb.co/wYtsNpS/Screenshot-2023-11-05-005652-removebg-preview.png"
+													class="img-responsive" alt=""></a>
+											<div class="desc">
+												<h3><a href="https://www.datacamp.com/certificate/DAA0012146335134">Data Analyst Professional Certificate</a></h3>
+												<p>from DataCamp 2023 - 2025</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+										<div class="blog-entry">
+											<a href="https://coursera.org/share/a22d807cc8a997d61beae6332c3c4557" class="blog-img"><img src="https://i.ibb.co/RDkvGnT/Coursera-Creative-Problem-Solving-46-GXJZWXKLW3-page-0001.jpg"
+													class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+											<div class="desc">
+												<h3><a href="https://coursera.org/share/a22d807cc8a997d61beae6332c3c4557">Creative Problem Solving</a></h3>
+												<p>I have completed the course of Creative Problem Solving from University of Minnesota in Coursera Platform</p>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+										<div class="blog-entry">
+											<a href="#" class="blog-img"><img src="https://i.ibb.co/NZ2d6Fn/Screenshot-2023-02-21-232749.png"
+													class="img-responsive" alt=""></a>
+											<div class="desc">
+												<h3><a href="#">Refocus Data Analytics Core Track Certificate</a></h3>
+												<p>I have completed the core track of the Data Analytics program of Refocus.</p>
+											</div>
+										</div>
+									</div> -->
+									<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+										<div class="blog-entry">
+											<a href="https://www.coursera.org/account/accomplishments/certificate/AY3E4SS4E652" class="blog-img"><img src="https://i.ibb.co/Qj7nF3V/Coursera-Technical-Support-Fundamentals-AY3-E4-SS4-E652-page-0001.jpg"
+													class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+											<div class="desc">
+												<h3><a href="https://www.coursera.org/account/accomplishments/certificate/AY3E4SS4E652">Technical Support Fundamentals</a></h3>
+												<p>I have completed the course of Technical Support Fundamentals from Google in Coursera Platform</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+										<div class="blog-entry">
+											<a href="https://www.coursera.org/account/accomplishments/certificate/KJW4RHHB7ZMP" class="blog-img"><img src="https://i.ibb.co/ThJX0wC/Coursera-Programming-Fundamentals-KJW4-RHHB7-ZMP-page-0001.jpg"
+													class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+											<div class="desc">
+												<h3><a href="https://www.coursera.org/account/accomplishments/certificate/KJW4RHHB7ZMP">Programming Fundamentals</a></h3>
+												<p>I have completed the course of Programming Fundamentals from Duke University in Coursera Platform.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+										<div class="blog-entry">
+											<a href="https://www.coursera.org/account/accomplishments/certificate/C2RK9Y73R44C" class="blog-img"><img src="https://i.ibb.co/9N4FNpp/Coursera-HTML-CSS-and-Javascript-for-Web-Developers-C2-RK9-Y73-R44-C-page-0001.jpg"
+													class="img-responsive" alt=""></a>
+											<div class="desc">
+												<h3><a href="https://www.coursera.org/account/accomplishments/certificate/C2RK9Y73R44C">HTML, CSS, JavaScript for Web Developers</a></h3>
+												<p>I have completed the course of HTML, CSS, JavaScript for Web Developers from John Hopkins University in Coursera Platform</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+										<div class="blog-entry">
+											<a href="https://sedkyaboushamalah-78619.medium.com/" class="blog-img"><img src="https://i.ibb.co/ZYzbMcC/Data-Science-Career-Track-page-0001.jpg"
+													class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+											<div class="desc">
+												<h3><a href="https://sedkyaboushamalah-78619.medium.com/">Data Scientist with Python Track</a></h3>
+												<p>I have completed full career track of Data Scientist with Python from DataCamp platform with total 23 short course</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+										<div class="blog-entry">
+											<a href="https://drive.google.com/file/d/17KfZB5HfiZvWJrJ74iKHg3eaxpF26ul1/view?usp=sharing" class="blog-img"><img src="https://i.ibb.co/Yh10CPC/Deep-Learning-Python-Track-page-0001.jpg"
+													class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+											<div class="desc">
+												<h3><a href="https://drive.google.com/file/d/17KfZB5HfiZvWJrJ74iKHg3eaxpF26ul1/view?usp=sharing">Deep Learning in Python Track</a></h3>
+												<p>I have completed the course of Deep Learning in Python Track from DataCamp platform</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+										<div class="blog-entry">
+											<a href="https://drive.google.com/file/d/1o_MpdI1eMWvkN7ippzLdTQ1CmTOavAz_/view?usp=sharing" class="blog-img"><img src="https://i.ibb.co/HTjy4DH/Image-Processing-Skill-Track-page-0001.jpg"
+													class="img-responsive" alt=""></a>
+											<div class="desc">
+												<h3><a href="https://drive.google.com/file/d/1o_MpdI1eMWvkN7ippzLdTQ1CmTOavAz_/view?usp=sharing">Image Processing with Python Track</a></h3>
+												<p>I have completed the course of Image Processing with Python Track from DataCamp platform</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+										<div class="blog-entry">
+											<a href="#" class="blog-img"><img src="https://i.ibb.co/80ykMwr/TOEFL-Mohammad-Dhikri-page-0001.jpg"
+													class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+											<div class="desc">
+												<h3><a href="#">Toefl Test</a></h3>
+												<p>My TOEFL Score is 483</p>
+											</div>
+										</div>
+									</div>
+								</div>
+		
+		
+								<!-- <div class="row">
+									<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+										data-animate-effect="fadeInLeft">
+										<span class="heading-meta">Certifications</span>
+										<h2 class="colorlib-heading">Other Achievements</h2>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+										<div class="fancy-collapse-panel">
+											<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="headingOne">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion"
+																href="#collapseOther" aria-expanded="true"
+																aria-controls="collapseOne">Other Certificates
+															</a>
+														</h4>
+													</div>
+													<div id="collapseOther" class="panel-collapse collapse in" role="tabpanel"
+														aria-labelledby="headingOne">
+														<div class="panel-body">
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/53930faa6edabb36dc8ea5277c54d42f010af123" target="_blank"><b>Natural Language Generation in Python</b></a>
+																		<span class="heading-meta">Feb 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/ba27064c5e640a10382eb8a804d3e1491f0f842d" target="_blank"><b>Intermediate SQL Queries</b></a>
+																		<span class="heading-meta">Mar 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/0c67920441fcd9c36bcd8932e23af019279b05d2" target="_blank"><b>Building Chatbots in Python</b></a>
+																		<span class="heading-meta">Feb 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+										<div class="fancy-collapse-panel">
+											<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="headingOne">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion"
+																href="#collapseDeep" aria-expanded="true"
+																aria-controls="collapseOne">Deep Learning in Python Track
+															</a>
+														</h4>
+													</div>
+													<div id="collapseDeep" class="panel-collapse collapse in" role="tabpanel"
+														aria-labelledby="headingOne">
+														<div class="panel-body">
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/f103b5a6d39a62cbe607bd1759b53a69bd9874d3" target="_blank"><b>Introduction to Deep Learning in Python</b></a>
+																		<span class="heading-meta">Jul 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/ae9f736fc4c764939d564aeccf536b39bf0e9306" target="_blank"><b>Introduction to Tensorflow in Python</b></a>
+																		<span class="heading-meta">Jul 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/48bec833776b8038bd38a50f6bc1cad8b80b7e46" target="_blank"><b>Deep Learning with PyTorch</b></a>
+																		<span class="heading-meta">Sep 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/ff1b1719fd5e7e47b6c38720c6b57c40e3022fbd" target="_blank"><b>Introduction to Deep Learning with Keras</b></a>
+																		<span class="heading-meta">Sep 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/c2bdcd913a2cb2b73bbe257585a2125ae510f105" target="_blank"><b>Advanced Deep Learning with Keras</b></a>
+																		<span class="heading-meta">Sep 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+										<div class="fancy-collapse-panel">
+											<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="headingOne">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion"
+																href="#collapseImage" aria-expanded="true"
+																aria-controls="collapseOne">Image Processing with Python Track
+															</a>
+														</h4>
+													</div>
+													<div id="collapseImage" class="panel-collapse collapse in" role="tabpanel"
+														aria-labelledby="headingOne">
+														<div class="panel-body">
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/c93f5d11879079c1f4ea186cfe034c12d499fa8b" target="_blank"><b>Image Processing in Python</b></a>
+																		<span class="heading-meta">Jul 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/9493846c49372f999edfdb2f09435f5bf669d7a3" target="_blank"><b>Image Processing with Keras in Python</b></a>
+																		<span class="heading-meta">Sep 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/bc8e7ff1fa4c6728298c2bee74b9409fbdf995e9" target="_blank"><b>Biomedical Image Analysis in Python</b></a>
+																		<span class="heading-meta">Oct 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+										<div class="fancy-collapse-panel">
+											<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+												<div class="panel panel-default">
+													<div class="panel-heading" role="tab" id="headingOne">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" data-parent="#accordion"
+																href="#collapseData" aria-expanded="true"
+																aria-controls="collapseOne">Data Scientist with Python Track
+															</a>
+														</h4>
+													</div>
+													<div id="collapseData" class="panel-collapse collapse in" role="tabpanel"
+														aria-labelledby="headingOne">
+														<div class="panel-body">
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/3a822a28b7f09a35f306efef5833d641d246ce3f" target="_blank"><b>Intoduction to Python</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.unpad.ac.id/" target="_blank"><b>Intoduction to Python</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/ec11f31a50ed0910141e9d169d5129fadbfc4cee" target="_blank"><b>Intermediate Python</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/25f71166507b3193d6f376d752a7a82f9ec416d4" target="_blank"><b>Data Manipulation with Pandas</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/253333f350279be8dfa5e148cb401bb5c78df147" target="_blank"><b>Joining Data with Pandas</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/5c7b1f9bb3cf70cf18f480b611016f013ea52809" target="_blank"><b>Intoduction to Data Visualization with Matplotlib</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/eb0995a6e32fbc0dc048415df366a44defb537e6" target="_blank"><b>Intoduction to Data Visualization with Seaborn</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/4e5ae2cab69ea04509446995a216625e35266c22" target="_blank"><b>Python Data Science Toolbox (Part 1)</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/82d4a191936d2d49662199f30a8580ab48cc7b78" target="_blank"><b>Python Data Science Toolbox (Part 2)</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/103296c07aae9f5fbd0c8d93fc81507271b4226a" target="_blank"><b>Intermediate Data Visualization with Seaborn</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/5724d84adacd4384b1072bef0241664e3b880216" target="_blank"><b>Intoduction to Importing Data in Python</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/69ba0be94abbc8d1896a923318f5e2d9860cea56" target="_blank"><b>Intermediate Importing Data in Python</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/60782417f3b0ac26c25b55cafd197b117f60b5f2" target="_blank"><b>Cleaning Data in Python</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/0a331b63507872892740cfdf13af5b394a854838" target="_blank"><b>Working with Dates and Times in Python</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/00be7802d78a3db03f21b33a15d03ebf7084ee02" target="_blank"><b>Writing Functions in Python</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/a7417bd30c0ca3445461a1fcfb79876f7b1b0c60" target="_blank"><b>Exploratory Data Analysis in Python</b></a>
+																		<span class="heading-meta">Jan 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="https://www.datacamp.com/statement-of-accomplishment/course/9718580f559f9877f71718d2401832c1b09f7451" target="_blank"><b>Analyzing Police Activity with Pandas</b></a>
+																		<span class="heading-meta">Feb 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="#" target="_blank"><b>Statistical Thinking in Python Part 1</b></a>
+																		<span class="heading-meta">Feb 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="#" target="_blank"><b>Statistical Thinking in Python Part 2</b></a>
+																		<span class="heading-meta">Feb 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="#" target="_blank"><b>Supervised Learning with Scikit-learn</b></a>
+																		<span class="heading-meta">Feb 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="#" target="_blank"><b>Unsupervised Learning in Python</b></a>
+																		<span class="heading-meta">Feb 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="#" target="_blank"><b>Machine Learning with Tree Based Models in Python</b></a>
+																		<span class="heading-meta">Feb 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="#" target="_blank"><b>Case Study School Budgeting with Machine Learning in Python</b></a>
+																		<span class="heading-meta">Feb 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+															<br>
+															<div class="row">
+																<div class="colorlib-feature edu-feature colorlib-feature-sm">
+																	<div class="colorlib-icon">
+																		<img src="images/dc.png" class="img-responsive"
+																			alt="Western University">
+																	</div>
+																	<div class="colorlib-text edu-feature__desc">
+																		<a href="#" target="_blank"><b>Cluster Analysis in Python</b></a>
+																		<span class="heading-meta">Feb 2021</span>
+																		<b>DataCamp</b>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div> -->
+							</div>
+						</section>
+
+
+
+
+
+
+
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
@@ -442,19 +1245,8 @@ analytical skills. Excellent academic record and passion for teaching. Valuable 
 								<h2 class="colorlib-heading animate-box">Portfolio <br>Tableau and Power BI</h2>
 							</div>
 						</div>
-						<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-							<div class="col-md-12">
-								<p class="work-menu"><span>
-									<!-- <a href="https://docs.google.com/document/d/1lJH9nU8XLG6Oy8iU6f2EV0PaA6UqWCXtGyShO1CDwHQ/edit?usp=sharing"
-															target="_blank" class="btn btn-primary btn-learn">View
-															CV <i class="fas fa-download"></i></a></p> -->
-									
-									<!-- <a class="active">View CV Here</a></span></p> -->
-								
-							</div>
-						</div>
-						<div class="row">
 
+						<div class="row">
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft" id="novypro">
 								<div class="project"
 									style="background-image: url(images/projects/powerbi.png);">
@@ -503,12 +1295,6 @@ analytical skills. Excellent academic record and passion for teaching. Valuable 
 								</div>
 							</div>
 
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft" id="projectCloudixia">
-							</div>
-
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft" id="projectTykOperator">
-							</div>
-
 						</div>
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
@@ -538,27 +1324,17 @@ analytical skills. Excellent academic record and passion for teaching. Valuable 
 									</div>
 								</div>
 							</div>
-							<!-- <div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="https://www.coursera.org/account/accomplishments/certificate/AY3E4SS4E652" class="blog-img"><img src="https://i.ibb.co/Qj7nF3V/Coursera-Technical-Support-Fundamentals-AY3-E4-SS4-E652-page-0001.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<h3><a href="https://www.coursera.org/account/accomplishments/certificate/AY3E4SS4E652">Technical Support Fundamentals</a></h3>
-										<p>I have completed the course of Technical Support Fundamentals from Google in Coursera Platform</p>
-									</div>
-								</div>
-							</div> -->
 						</div>
-						<div class="row">
+						<!-- <div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
 								<span class="heading-meta">Data Science and Visualizations in Python</span>
 								<h2 class="colorlib-heading animate-box">My Projects</h2>
 							</div>
-						</div>
+						</div> -->
 
 
-						<div class="row">
+						<!-- <div class="row">
 							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 								<div class="fancy-collapse-panel">
 									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -633,29 +1409,6 @@ analytical skills. Excellent academic record and passion for teaching. Valuable 
 												</div>
 											</div>
 										</div>
-										<!-- <div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingTwo">
-												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-														href="#collapseTwo" aria-expanded="false"
-														aria-controls="collapseTwo">Bachelor Degree of Computer Science
-													</a>
-												</h4>
-											</div>
-											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-												aria-labelledby="headingTwo">
-												<div class="panel-body">
-													<p>Far far away, behind the word <strong>mountains</strong>, far
-														from the countries Vokalia and Consonantia, there live the blind
-														texts. Separated they live in Bookmarksgrove right at the coast
-														of the Semantics, a large language ocean.</p>
-													<ul>
-														<li>Separated they live in Bookmarksgrove right</li>
-														<li>Separated they live in Bookmarksgrove right</li>
-													</ul>
-												</div>
-											</div>
-										</div> -->
 									</div>
 								</div>
 							</div>
@@ -763,41 +1516,188 @@ analytical skills. Excellent academic record and passion for teaching. Valuable 
 												</div>
 											</div>
 										</div>
-										<!-- <div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingTwo">
-												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-														href="#collapseTwo" aria-expanded="false"
-														aria-controls="collapseTwo">Bachelor Degree of Computer Science
-													</a>
-												</h4>
-											</div>
-											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-												aria-labelledby="headingTwo">
-												<div class="panel-body">
-													<p>Far far away, behind the word <strong>mountains</strong>, far
-														from the countries Vokalia and Consonantia, there live the blind
-														texts. Separated they live in Bookmarksgrove right at the coast
-														of the Semantics, a large language ocean.</p>
-													<ul>
-														<li>Separated they live in Bookmarksgrove right</li>
-														<li>Separated they live in Bookmarksgrove right</li>
-													</ul>
-												</div>
-											</div>
-										</div> -->
 									</div>
 								</div>
-							</div>
-						</div>
-						<!-- <div class="row">
-							<div class="col-md-12 animate-box">
-								<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i
-											class="icon-reload"></i></a></p>
 							</div>
 						</div> -->
 					</div>
 				</section>
+
+				<section class="colorlib-blog" data-section="work">
+					<div class="colorlib-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">Documentation of Research and Project</span>
+								<h2 class="colorlib-heading">My Programs Documentary</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="blog-entry">
+									<a href="#" class="blog-img"><img src="https://i.ibb.co/HgyVTVZ/ifest2.png"
+											class="img-responsive" alt=""></a>
+									<div class="desc">
+										<h3><a href="#">Informatics Festival 2021 Web App</a></h3>
+										<p>Project Web Development for Annual Event (use Laravel). <br/> As Project Manager and Frontend Developer</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="blog-entry">
+									<a href="#" class="blog-img"><img src="https://i.ibb.co/yq5rkg2/booklet2.png"
+											class="img-responsive" alt=""></a>
+									<div class="desc">
+										<h3><a href="#">Booklet Web App</a></h3>
+										<p>Project Web Development for Annual Event (use Laravel). <br/> As Fullstack Developer</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="blog-entry">
+									<a href="#" class="blog-img"><img src="https://i.ibb.co/TMr3cdJ/budayaku.png"
+											class="img-responsive" alt=""></a>
+									<div class="desc">
+										<h3><a href="#">BudayaKu Web App</a></h3>
+										<p>as Fullstack Developer with Laravel</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="blog-entry">
+									<a href="#" class="blog-img"><img src="https://i.ibb.co/wy7dqJ9/wedd.png"
+											class="img-responsive" alt=""></a>
+									<div class="desc">
+										<h3><a href="#">Weddlex Web App</a></h3>
+										<p>as Fullstack Developer with Lumen Laravel</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="blog-entry">
+									<a href="#" class="blog-img"><img src="https://i.ibb.co/QCw3svb/ufarming.png"
+											class="img-responsive" alt=""></a>
+									<div class="desc">
+										<h3><a href="#">Ufarming App API</a></h3>
+										<p>as Backend Developer with Lumen Laravel</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="blog-entry">
+									<a href="#" class="blog-img"><img src="https://i.ibb.co/s2DnDtY/bizclass.png"
+											class="img-responsive" alt=""></a>
+									<div class="desc">
+										<h3><a href="#">Ferma App API</a></h3>
+										<p>as Backend Developer with Lumen Laravel</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="blog-entry">
+									<a href="#" class="blog-img"><img src="https://i.ibb.co/rtQ5mPn/polyclub.png"
+											class="img-responsive" alt=""></a>
+									<div class="desc">
+										<h3><a href="#">PolyClub App API</a></h3>
+										<p>as Backend Developer with Node Express JS</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="blog-entry">
+									<a href="#" class="blog-img"><img src="https://i.ibb.co/gT6kZjx/ferma.png"
+											class="img-responsive" alt=""></a>
+									<div class="desc">
+										<h3><a href="#">Ferma App API</a></h3>
+										<p>as Backend Developer with Node Express JS</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="blog-entry">
+									<a href="#" class="blog-img"><img src="https://i.ibb.co/ZLzkK5M/Screenshot-2023-03-25-214018.png"
+											class="img-responsive" alt=""></a>
+									<div class="desc">
+										<h3><a href="#">Epicentrum 2022 Web App</a></h3>
+										<p>Project Web Development for Annual Event use Laravel <br/> as Frontend Developer</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="blog-entry">
+									<a href="#" class="blog-img"><img src="https://i.ibb.co/YTTDfDf/epic.png"
+											class="img-responsive" alt=""></a>
+									<div class="desc">
+										<h3><a href="#">Epicentrum 2021 Web App</a></h3>
+										<p>Project Web Development for Annual Event use Laravel <br/> as Frontend Developer</p>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="blog-entry">
+									<a href="https://dhik.github.io/hta_analytics/" class="blog-img"><img src="https://i.ibb.co/Kb8Bh6b/Screenshot-2023-03-25-145122.png"
+											class="img-responsive" alt=""></a>
+									<div class="desc">
+										<h3><a href="https://dhik.github.io/hta_analytics/">Housing and Transport Analytics App</a></h3>
+										<p>Project Web Development in UN Big Data 2022 use HTML and CSS <br/> as Fullstack Developer</p>
+									</div>
+								</div>
+							</div> -->
+							<!-- <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="blog-entry">
+									<a href="https://colab.research.google.com/drive/1DL0ToMDjLl7MjaiMgHuaOCFfZC6dLsFN?usp=sharing" class="blog-img"><img src="https://i.ibb.co/qsGnG6w/Screenshot-2023-03-24-152302.png"
+											class="img-responsive" alt=""></a>
+									<div class="desc">
+										<h3><a href="https://colab.research.google.com/drive/1DL0ToMDjLl7MjaiMgHuaOCFfZC6dLsFN?usp=sharing">Human Mobility Analytics</a></h3>
+										<p>Analytics Data with Python</p>
+									</div>
+								</div>
+							</div> -->
+							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="blog-entry">
+									<a href="https://prabu-2022.vercel.app/" class="blog-img"><img src="https://i.ibb.co/FgpZ9Gb/Screenshot-2023-03-25-161801.png"
+											class="img-responsive" alt=""></a>
+									<div class="desc">
+										<h3><a href="https://prabu-2022.vercel.app/">Prabu 2022 Web App</a></h3>
+										<p>Project Web Development use Vue.js and Express.js <br/> as Project Manager and Frontend Developer</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="blog-entry">
+									<a href="https://prabu-2021-u5y6.vercel.app/" class="blog-img"><img src="https://i.ibb.co/vvvdKTd/Screenshot-2023-03-25-171528.png"
+											class="img-responsive" alt=""></a>
+									<div class="desc">
+										<h3><a href="https://prabu-2021-u5y6.vercel.app/">Prabu 2021 Web App</a></h3>
+										<p>Project Web Development use Vue.js and Express.js <br/> as Project Manager and Frontend Developer</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="blog-entry">
+									<a href="https://dev.to/sedkis" class="blog-img"><img src="https://i.ibb.co/882SJXD/Screenshot-1588.png"
+											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+									<div class="desc">
+										<h3><a href="https://dev.to/sedkis">Mask Detection with Residual Network Method</a></h3>
+										<p>Research for my Bachelor's Degree in Computer Science</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="blog-entry">
+									<a href="https://tyk.io/author/sedkytyk-io" class="blog-img"><img src="https://i.ibb.co/D9sfdWV/Screenshot-2022-03-19-220829.png"
+											class="img-responsive" alt=""></a>
+									<div class="desc">
+										<h3><a href="https://tyk.io/author/sedkytyk-io/">Surveillance App in Yogyakarta</a></h3>
+										<p>Analysis Sum of Type Vehicle</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				
 
 				<section class="colorlib-services">
 					<div class="colorlib-narrow-content">
@@ -1176,1032 +2076,9 @@ analytical skills. Excellent academic record and passion for teaching. Valuable 
 					</div>
 				</section>
 
-				<section class="colorlib-education" data-section="education">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Education</span>
-								<h2 class="colorlib-heading animate-box">Education</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<div class="fancy-collapse-panel">
-									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingOne">
-												<h4 class="panel-title">
-													<a data-toggle="collapse" data-parent="#accordion"
-														href="#collapseOne" aria-expanded="true"
-														aria-controls="collapseOne">Bachelor of Computer Science (BsCs)
-													</a>
-												</h4>
-											</div>
-											<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-												aria-labelledby="headingOne">
-												<div class="panel-body">
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/logo.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.unpad.ac.id/" target="_blank"><b>Padjadjaran University</b></a>
-																<span class="heading-meta">08/2018 - 01/2022</span>
-																<b>Bachelor of Computer Science (BsCs)</b>
-																<ul>
-																	<li>
-																		Major in Artificial Intelligence
-																	</li>
-																	<li>
-																		Minor in Information System
-																	</li>
-																</ul>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingTwo">
-												<h4 class="panel-title">
-													<a data-toggle="collapse" data-parent="#accordion"
-														href="#collapseTwo" aria-expanded="true"
-														aria-controls="collapseTwo">Refocus Data Analytics Career Track
-													</a>
-												</h4>
-											</div>
-											<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel"
-												aria-labelledby="headingTwo">
-												<div class="panel-body">
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/refocus.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.unpad.ac.id/" target="_blank"><b>Refocus</b></a>
-																<span class="heading-meta">08/2022 - Present</span>
-																<b>Data Analytics Course Career Track</b>
-																<ul>
-																	<li>
-																		Power BI
-																	</li>
-																	<li>
-																		PostgreSQL
-																	</li>
-																	<li>
-																		Microsoft Excel
-																	</li>
-																	<li>
-																		Python
-																	</li>
-																</ul>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="colorlib-experience" data-section="services">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Experience</span>
-								<h2 class="colorlib-heading animate-box">Work Experience</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="timeline-centered">
-
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-1">
-												<i class="icon-code"></i>
-											</div>
-											<div class="timeline-label">
-												<h2 class="mb-2">Senior Data Scientist</h2>
-												<h4 class="mb-0"><a href="https://www.fortech.co.id/"
-														target="_blank">PT Fortech Indotama</a></h4>
-												<span class="text-muted">Feb 2023 - Current (Full time)</span>
-												<ul class="mb-0">
-													<li>
-														Scraped the website of the Forestry Service, Constitutional Court to carry out the analysis
-process and create a visual dashboard of the analysis results with Tableau and Power BI
-													</li>
-													<li>
-														Conducted sentiment analysis from Twitter to see people's views on public policies and issues
-that are circulating
-													</li>
-													<li>
-														Integrated data and created a database in PostgreSQL as a result of web scraping using Selenium
-and BeautifulSoup
-													</li>
-												</ul>
-											</div>
-										</div>
-									</article>
-
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-2">
-												<i class="icon-code"></i>
-											</div>
-											<div class="timeline-label">
-												<h2 class="mb-2">Data Science and Python Engineer</h2>
-												<h4 class="mb-0"><a href="https://gamamulti.com/halaman-34-global-data-inspirasi-datains"
-														target="_blank">PT. Global Data Inspirasi (DataIns)</a></h4>
-												<span class="text-muted">Mar 2022 - Jan 2023 (Contract)</span>
-												<ul class="mb-0">
-													<li>
-														Experienced in analyzing data signals from gadgets using Python and Scikit-Mobility library to
-improve public transportation services efficiency by up to 25%.
-													</li>
-													<li>
-														Skilled in building a vehicle detection engine using YoloN5 in Python for highway surveillance
-using Redis, Laravel, and Web Socket technology, reducing monitoring process time by up to
-60%.
-													</li>
-													<li>
-														Proficient in creating an interactive dashboard to evaluate the Ministry of Communication and
-Informatics' performance for the last 3-5 years, contributing to the development of the ministry's
-performance by up to 20%.
-													</li>
-													<li>
-														Expertise in developing an application website using ArcGIS and JavaScript to view population
-density, costs, and carbon emissions per trip, simplifying the handling of housing and
-transportation issues in big cities by up to 15%.
-													</li>
-												</ul>
-											</div>
-										</div>
-									</article>
-
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-3">
-												<i class="icon-code"></i>
-											</div>
-											<div class="timeline-label">
-												<h2 class="mb-2">Data Scientist</h2>
-												<h4 class="mb-0"><a href="https://kazee.id/" target="_blank">PT. Kazee Digital Indonesia</a></h4>
-												<span class="text-muted">Feb 2021 - May 2021 (Internship)</span>
-												<ul class="mb-0">
-													<li>
-														Building a ChatBot using NLU (Natural Language Understanding) with the Rasa library.
-Adding NLU can increase satisfaction and experience by up to 30%.
-													</li>
-													<li>
-														An analysis of the results of machines built using Transformers is carried out.
-													</li>
-													<li>
-														Understand Indonesian grammar patterns to process Natural Language Generation using
-the Transformers library. By doing this, it can improve the engine by up to 25%.
-													</li>
-												</ul>
-											</div>
-										</div>
-									</article>
-
-									<article class="timeline-entry begin animate-box"
-										data-animate-effect="fadeInBottom">
-										<div class="timeline-entry-inner">
-											<div class="timeline-icon color-none">
-											</div>
-										</div>
-									</article>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
-
-				<section class="colorlib-blog" data-section="blog">
-					<div class="colorlib-narrow-content">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Certifications</span>
-								<h2 class="colorlib-heading">Achievements</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="#" class="blog-img"><img src="https://i.ibb.co/6sg57T4/Data-Science-Certification-page-0001.jpg"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="https://www.datacamp.com/certificate/DSA0015076407838">Data Scientist Associate Certificate</a></h3>
-										<p>from DataCamp 2023 - 2025</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="#" class="blog-img"><img src="https://i.ibb.co/WPRJZb6/DAA0012146335134-page-0001.jpg"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="https://www.datacamp.com/certificate/DAA0012146335134">Data Analyst Associate Certificate</a></h3>
-										<p>from DataCamp 2023 - 2025</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="https://coursera.org/share/a22d807cc8a997d61beae6332c3c4557" class="blog-img"><img src="https://i.ibb.co/RDkvGnT/Coursera-Creative-Problem-Solving-46-GXJZWXKLW3-page-0001.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<h3><a href="https://coursera.org/share/a22d807cc8a997d61beae6332c3c4557">Creative Problem Solving</a></h3>
-										<p>I have completed the course of Creative Problem Solving from University of Minnesota in Coursera Platform</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="#" class="blog-img"><img src="https://i.ibb.co/NZ2d6Fn/Screenshot-2023-02-21-232749.png"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="#">Refocus Data Analytics Core Track Certificate</a></h3>
-										<p>I have completed the core track of the Data Analytics program of Refocus.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="https://www.coursera.org/account/accomplishments/certificate/AY3E4SS4E652" class="blog-img"><img src="https://i.ibb.co/Qj7nF3V/Coursera-Technical-Support-Fundamentals-AY3-E4-SS4-E652-page-0001.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<h3><a href="https://www.coursera.org/account/accomplishments/certificate/AY3E4SS4E652">Technical Support Fundamentals</a></h3>
-										<p>I have completed the course of Technical Support Fundamentals from Google in Coursera Platform</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="https://www.coursera.org/account/accomplishments/certificate/KJW4RHHB7ZMP" class="blog-img"><img src="https://i.ibb.co/ThJX0wC/Coursera-Programming-Fundamentals-KJW4-RHHB7-ZMP-page-0001.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<h3><a href="https://www.coursera.org/account/accomplishments/certificate/KJW4RHHB7ZMP">Programming Fundamentals</a></h3>
-										<p>I have completed the course of Programming Fundamentals from Duke University in Coursera Platform.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="https://www.coursera.org/account/accomplishments/certificate/C2RK9Y73R44C" class="blog-img"><img src="https://i.ibb.co/9N4FNpp/Coursera-HTML-CSS-and-Javascript-for-Web-Developers-C2-RK9-Y73-R44-C-page-0001.jpg"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="https://www.coursera.org/account/accomplishments/certificate/C2RK9Y73R44C">HTML, CSS, JavaScript for Web Developers</a></h3>
-										<p>I have completed the course of HTML, CSS, JavaScript for Web Developers from John Hopkins University in Coursera Platform</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="https://sedkyaboushamalah-78619.medium.com/" class="blog-img"><img src="https://i.ibb.co/ZYzbMcC/Data-Science-Career-Track-page-0001.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<h3><a href="https://sedkyaboushamalah-78619.medium.com/">Data Scientist with Python Track</a></h3>
-										<p>I have completed full career track of Data Scientist with Python from DataCamp platform with total 23 short course</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="https://drive.google.com/file/d/17KfZB5HfiZvWJrJ74iKHg3eaxpF26ul1/view?usp=sharing" class="blog-img"><img src="https://i.ibb.co/Yh10CPC/Deep-Learning-Python-Track-page-0001.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<h3><a href="https://drive.google.com/file/d/17KfZB5HfiZvWJrJ74iKHg3eaxpF26ul1/view?usp=sharing">Deep Learning in Python Track</a></h3>
-										<p>I have completed the course of Deep Learning in Python Track from DataCamp platform</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry">
-									<a href="https://drive.google.com/file/d/1o_MpdI1eMWvkN7ippzLdTQ1CmTOavAz_/view?usp=sharing" class="blog-img"><img src="https://i.ibb.co/HTjy4DH/Image-Processing-Skill-Track-page-0001.jpg"
-											class="img-responsive" alt=""></a>
-									<div class="desc">
-										<h3><a href="https://drive.google.com/file/d/1o_MpdI1eMWvkN7ippzLdTQ1CmTOavAz_/view?usp=sharing">Image Processing with Python Track</a></h3>
-										<p>I have completed the course of Image Processing with Python Track from DataCamp platform</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry">
-									<a href="#" class="blog-img"><img src="https://i.ibb.co/80ykMwr/TOEFL-Mohammad-Dhikri-page-0001.jpg"
-											class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-									<div class="desc">
-										<h3><a href="#">Toefl Test</a></h3>
-										<p>My TOEFL Score is 483</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Certifications</span>
-								<h2 class="colorlib-heading">Other Achievements</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<div class="fancy-collapse-panel">
-									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingOne">
-												<h4 class="panel-title">
-													<a data-toggle="collapse" data-parent="#accordion"
-														href="#collapseOther" aria-expanded="true"
-														aria-controls="collapseOne">Other Certificates
-													</a>
-												</h4>
-											</div>
-											<div id="collapseOther" class="panel-collapse collapse in" role="tabpanel"
-												aria-labelledby="headingOne">
-												<div class="panel-body">
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/53930faa6edabb36dc8ea5277c54d42f010af123" target="_blank"><b>Natural Language Generation in Python</b></a>
-																<span class="heading-meta">Feb 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/ba27064c5e640a10382eb8a804d3e1491f0f842d" target="_blank"><b>Intermediate SQL Queries</b></a>
-																<span class="heading-meta">Mar 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/0c67920441fcd9c36bcd8932e23af019279b05d2" target="_blank"><b>Building Chatbots in Python</b></a>
-																<span class="heading-meta">Feb 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- <div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingTwo">
-												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-														href="#collapseTwo" aria-expanded="false"
-														aria-controls="collapseTwo">Bachelor Degree of Computer Science
-													</a>
-												</h4>
-											</div>
-											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-												aria-labelledby="headingTwo">
-												<div class="panel-body">
-													<p>Far far away, behind the word <strong>mountains</strong>, far
-														from the countries Vokalia and Consonantia, there live the blind
-														texts. Separated they live in Bookmarksgrove right at the coast
-														of the Semantics, a large language ocean.</p>
-													<ul>
-														<li>Separated they live in Bookmarksgrove right</li>
-														<li>Separated they live in Bookmarksgrove right</li>
-													</ul>
-												</div>
-											</div>
-										</div> -->
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<div class="fancy-collapse-panel">
-									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingOne">
-												<h4 class="panel-title">
-													<a data-toggle="collapse" data-parent="#accordion"
-														href="#collapseDeep" aria-expanded="true"
-														aria-controls="collapseOne">Deep Learning in Python Track
-													</a>
-												</h4>
-											</div>
-											<div id="collapseDeep" class="panel-collapse collapse in" role="tabpanel"
-												aria-labelledby="headingOne">
-												<div class="panel-body">
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/f103b5a6d39a62cbe607bd1759b53a69bd9874d3" target="_blank"><b>Introduction to Deep Learning in Python</b></a>
-																<span class="heading-meta">Jul 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/ae9f736fc4c764939d564aeccf536b39bf0e9306" target="_blank"><b>Introduction to Tensorflow in Python</b></a>
-																<span class="heading-meta">Jul 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/48bec833776b8038bd38a50f6bc1cad8b80b7e46" target="_blank"><b>Deep Learning with PyTorch</b></a>
-																<span class="heading-meta">Sep 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/ff1b1719fd5e7e47b6c38720c6b57c40e3022fbd" target="_blank"><b>Introduction to Deep Learning with Keras</b></a>
-																<span class="heading-meta">Sep 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/c2bdcd913a2cb2b73bbe257585a2125ae510f105" target="_blank"><b>Advanced Deep Learning with Keras</b></a>
-																<span class="heading-meta">Sep 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-												</div>
-											</div>
-										</div>
-										<!-- <div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingTwo">
-												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-														href="#collapseTwo" aria-expanded="false"
-														aria-controls="collapseTwo">Bachelor Degree of Computer Science
-													</a>
-												</h4>
-											</div>
-											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-												aria-labelledby="headingTwo">
-												<div class="panel-body">
-													<p>Far far away, behind the word <strong>mountains</strong>, far
-														from the countries Vokalia and Consonantia, there live the blind
-														texts. Separated they live in Bookmarksgrove right at the coast
-														of the Semantics, a large language ocean.</p>
-													<ul>
-														<li>Separated they live in Bookmarksgrove right</li>
-														<li>Separated they live in Bookmarksgrove right</li>
-													</ul>
-												</div>
-											</div>
-										</div> -->
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<div class="fancy-collapse-panel">
-									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingOne">
-												<h4 class="panel-title">
-													<a data-toggle="collapse" data-parent="#accordion"
-														href="#collapseImage" aria-expanded="true"
-														aria-controls="collapseOne">Image Processing with Python Track
-													</a>
-												</h4>
-											</div>
-											<div id="collapseImage" class="panel-collapse collapse in" role="tabpanel"
-												aria-labelledby="headingOne">
-												<div class="panel-body">
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/c93f5d11879079c1f4ea186cfe034c12d499fa8b" target="_blank"><b>Image Processing in Python</b></a>
-																<span class="heading-meta">Jul 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/9493846c49372f999edfdb2f09435f5bf669d7a3" target="_blank"><b>Image Processing with Keras in Python</b></a>
-																<span class="heading-meta">Sep 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/bc8e7ff1fa4c6728298c2bee74b9409fbdf995e9" target="_blank"><b>Biomedical Image Analysis in Python</b></a>
-																<span class="heading-meta">Oct 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- <div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingTwo">
-												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-														href="#collapseTwo" aria-expanded="false"
-														aria-controls="collapseTwo">Bachelor Degree of Computer Science
-													</a>
-												</h4>
-											</div>
-											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-												aria-labelledby="headingTwo">
-												<div class="panel-body">
-													<p>Far far away, behind the word <strong>mountains</strong>, far
-														from the countries Vokalia and Consonantia, there live the blind
-														texts. Separated they live in Bookmarksgrove right at the coast
-														of the Semantics, a large language ocean.</p>
-													<ul>
-														<li>Separated they live in Bookmarksgrove right</li>
-														<li>Separated they live in Bookmarksgrove right</li>
-													</ul>
-												</div>
-											</div>
-										</div> -->
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<div class="fancy-collapse-panel">
-									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingOne">
-												<h4 class="panel-title">
-													<a data-toggle="collapse" data-parent="#accordion"
-														href="#collapseData" aria-expanded="true"
-														aria-controls="collapseOne">Data Scientist with Python Track
-													</a>
-												</h4>
-											</div>
-											<div id="collapseData" class="panel-collapse collapse in" role="tabpanel"
-												aria-labelledby="headingOne">
-												<div class="panel-body">
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/3a822a28b7f09a35f306efef5833d641d246ce3f" target="_blank"><b>Intoduction to Python</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.unpad.ac.id/" target="_blank"><b>Intoduction to Python</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/ec11f31a50ed0910141e9d169d5129fadbfc4cee" target="_blank"><b>Intermediate Python</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/25f71166507b3193d6f376d752a7a82f9ec416d4" target="_blank"><b>Data Manipulation with Pandas</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/253333f350279be8dfa5e148cb401bb5c78df147" target="_blank"><b>Joining Data with Pandas</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/5c7b1f9bb3cf70cf18f480b611016f013ea52809" target="_blank"><b>Intoduction to Data Visualization with Matplotlib</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/eb0995a6e32fbc0dc048415df366a44defb537e6" target="_blank"><b>Intoduction to Data Visualization with Seaborn</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/4e5ae2cab69ea04509446995a216625e35266c22" target="_blank"><b>Python Data Science Toolbox (Part 1)</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/82d4a191936d2d49662199f30a8580ab48cc7b78" target="_blank"><b>Python Data Science Toolbox (Part 2)</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/103296c07aae9f5fbd0c8d93fc81507271b4226a" target="_blank"><b>Intermediate Data Visualization with Seaborn</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/5724d84adacd4384b1072bef0241664e3b880216" target="_blank"><b>Intoduction to Importing Data in Python</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/69ba0be94abbc8d1896a923318f5e2d9860cea56" target="_blank"><b>Intermediate Importing Data in Python</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/60782417f3b0ac26c25b55cafd197b117f60b5f2" target="_blank"><b>Cleaning Data in Python</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/0a331b63507872892740cfdf13af5b394a854838" target="_blank"><b>Working with Dates and Times in Python</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/00be7802d78a3db03f21b33a15d03ebf7084ee02" target="_blank"><b>Writing Functions in Python</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/a7417bd30c0ca3445461a1fcfb79876f7b1b0c60" target="_blank"><b>Exploratory Data Analysis in Python</b></a>
-																<span class="heading-meta">Jan 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="https://www.datacamp.com/statement-of-accomplishment/course/9718580f559f9877f71718d2401832c1b09f7451" target="_blank"><b>Analyzing Police Activity with Pandas</b></a>
-																<span class="heading-meta">Feb 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="#" target="_blank"><b>Statistical Thinking in Python Part 1</b></a>
-																<span class="heading-meta">Feb 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="#" target="_blank"><b>Statistical Thinking in Python Part 2</b></a>
-																<span class="heading-meta">Feb 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="#" target="_blank"><b>Supervised Learning with Scikit-learn</b></a>
-																<span class="heading-meta">Feb 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="#" target="_blank"><b>Unsupervised Learning in Python</b></a>
-																<span class="heading-meta">Feb 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="#" target="_blank"><b>Machine Learning with Tree Based Models in Python</b></a>
-																<span class="heading-meta">Feb 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="#" target="_blank"><b>Case Study School Budgeting with Machine Learning in Python</b></a>
-																<span class="heading-meta">Feb 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-													<br>
-													<div class="row">
-														<div class="colorlib-feature edu-feature colorlib-feature-sm">
-															<div class="colorlib-icon">
-																<img src="images/dc.png" class="img-responsive"
-																	alt="Western University">
-															</div>
-															<div class="colorlib-text edu-feature__desc">
-																<a href="#" target="_blank"><b>Cluster Analysis in Python</b></a>
-																<span class="heading-meta">Feb 2021</span>
-																<b>DataCamp</b>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- <div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingTwo">
-												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-														href="#collapseTwo" aria-expanded="false"
-														aria-controls="collapseTwo">Bachelor Degree of Computer Science
-													</a>
-												</h4>
-											</div>
-											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-												aria-labelledby="headingTwo">
-												<div class="panel-body">
-													<p>Far far away, behind the word <strong>mountains</strong>, far
-														from the countries Vokalia and Consonantia, there live the blind
-														texts. Separated they live in Bookmarksgrove right at the coast
-														of the Semantics, a large language ocean.</p>
-													<ul>
-														<li>Separated they live in Bookmarksgrove right</li>
-														<li>Separated they live in Bookmarksgrove right</li>
-													</ul>
-												</div>
-											</div>
-										</div> -->
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
 				
+
+			
 
 				<section class="colorlib-contact" data-section="contact" style="padding-bottom: 20em;">
 					<div class="colorlib-narrow-content">
@@ -2277,7 +2154,7 @@ the Transformers library. By doing this, it can improve the engine by up to 25%.
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Flexslider -->
@@ -2290,6 +2167,7 @@ the Transformers library. By doing this, it can improve the engine by up to 25%.
 
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+
 
 </body>
 
