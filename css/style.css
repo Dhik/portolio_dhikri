@@ -16,6 +16,10 @@
   width: 60px;
   margin-left: 60px !important;
 }
+.card-no-border {
+  border: none;
+}
+
 
 
 body {
