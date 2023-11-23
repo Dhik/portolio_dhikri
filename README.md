@@ -1,7 +1,7 @@
-# portfolio-v2
+# Portfolio_Dhikri
 
-Personal website, you can visit it at [www.sedky.ca](https://www.sedky.ca).  
+Personal website, you can visit it at [portfolio_dhikri](https://dhik.github.io/portolio_dhikri/).
 
-It's just static JS/CSS, hosted for free using Github Pages.
+## Hi I'm Dhikri,
 
-To fork, simply clone it and open the [index.hmtl](./index.html) file.  You can download VS Code plugin to do live reloading for you while you do development.
+Highly motivated data scientist with a strong background in computer science. Proficient in SQL, Power BI, Tableau, Python, Pandas, NumPy, TensorFlow, and PyTorch. Skilled in analyzing complex datasets, creating visualizations, and developing user-friendly applications. Proven track record in sentiment analysis, public transportation efficiency, and handling housing and transportation issues. Certified Data Analyst and Data Scientist. Strong leadership, adaptability, and analytical skills. Excellent academic record and passion for teaching. Valuable asset for data-driven projects and teams.
