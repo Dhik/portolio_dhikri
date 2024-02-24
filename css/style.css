@@ -903,7 +903,7 @@ body.offcanvas {
     z-index: 1;
     margin-bottom: 25px; }
     .blog-entry .blog-img img {
-      max-height: 250px;
+      max-height: 320px;
       position: relative;
       max-width: 100%;
       -webkit-transform: scale(1);
