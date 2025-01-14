@@ -1,0 +1,475 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Learning Journey - Dhikri's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all filter buttons and certificates
+            const filterBtns = document.querySelectorAll('.category-btn');
+            const certCards = document.querySelectorAll('.cert-card');
+
+            // Add click event to each filter button
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+
+                    // Get the filter category
+                    const category = btn.textContent.toLowerCase();
+
+                    // Show/hide certificates based on category
+                    certCards.forEach(card => {
+                        if (category === 'all') {
+                            card.style.display = 'block';
+                            return;
+                        }
+
+                        // Get tags from the card
+                        const tags = Array.from(card.querySelectorAll('.tech-tag'))
+                            .map(tag => tag.textContent.toLowerCase());
+                        const title = card.querySelector('.cert-title').textContent.toLowerCase();
+
+                        // Check if card matches the category
+                        const matchesCategory = tags.some(tag => tag.includes(category)) ||
+                                             title.includes(category);
+
+                        card.style.display = matchesCategory ? 'block' : 'none';
+                    });
+                });
+            });
+        });
+
+        // Add scroll animation for the back button
+        document.querySelector('.back-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.history.back();
+        });
+
+        // Add shadow to header on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 0) {
+                header.style.boxShadow = '0 2px 15px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 15px rgba(0,0,0,0.05)';
+            }
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: "Quicksand", Arial, sans-serif;
+            line-height: 1.8;
+            color: rgba(0, 0, 0, 0.7);
+            background: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #2c98f0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+            color: #2280d0;
+        }
+
+        .page-title {
+            font-size: 24px;
+            color: #333;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 100px auto 40px;
+            padding: 0 20px;
+        }
+
+        .cert-categories {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .category-btn {
+            padding: 8px 16px;
+            border: none;
+            background: #fff;
+            color: #666;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .category-btn.active {
+            background: #2c98f0;
+            color: #fff;
+        }
+
+        .category-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .cert-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .cert-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .cert-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .cert-card:hover .cert-image img {
+            transform: scale(1.05);
+        }
+
+        .cert-content {
+            padding: 20px;
+        }
+
+        .cert-title {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .cert-issuer {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .cert-date {
+            font-size: 14px;
+            color: #2c98f0;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .tech-stack {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .tech-tag {
+            background: #f0f7ff;
+            color: #2c98f0;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .view-cert-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: transparent;
+            border: 1px solid #2c98f0;
+            border-radius: 6px;
+            color: #2c98f0;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .view-cert-btn:hover {
+            background: #2c98f0;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .main-content {
+                margin-top: 140px;
+            }
+
+            .cert-categories {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Portfolio</span>
+            </a>
+            <h1 class="page-title">Learning Journey & Certifications</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Category Filter -->
+        <div class="cert-categories">
+            <button class="category-btn active">All</button>
+            <button class="category-btn">Data Science</button>
+            <button class="category-btn">Data Analytics</button>
+            <button class="category-btn">Web Development</button>
+            <button class="category-btn">Cloud Computing</button>
+        </div>
+
+        <!-- Certificates Grid -->
+        <div class="cert-grid">
+            <!-- DataCamp Data Scientist -->
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="https://i.ibb.co/SXKG2fc/Screenshot-2023-11-05-005710-removebg-preview.png" alt="Data Scientist Certificate">
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">Data Scientist Professional Certificate</h3>
+                    <p class="cert-issuer">DataCamp</p>
+                    <p class="cert-date">2023 - 2025</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Data Analysis</span>
+                    </div>
+                    <a href="https://www.datacamp.com/certificate/DS0027146804518" class="view-cert-btn" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>View Certificate</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- DataCamp Data Analyst -->
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="https://i.ibb.co/wYtsNpS/Screenshot-2023-11-05-005652-removebg-preview.png" alt="Data Analyst Certificate">
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">Data Analyst Professional Certificate</h3>
+                    <p class="cert-issuer">DataCamp</p>
+                    <p class="cert-date">2023 - 2025</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Data Visualization</span>
+                        <span class="tech-tag">Statistical Analysis</span>
+                    </div>
+                    <a href="https://www.datacamp.com/certificate/DA0024420619770" class="view-cert-btn" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>View Certificate</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Data Engineer Associate -->
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="https://i.ibb.co/x3TB5DH/Screenshot-2024-02-25-003541-removebg-preview.png" alt="Data Engineer Certificate">
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">Data Engineer Associate Certificate</h3>
+                    <p class="cert-issuer">DataCamp</p>
+                    <p class="cert-date">2023 - 2025</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Data Engineering</span>
+                        <span class="tech-tag">ETL</span>
+                        <span class="tech-tag">Big Data</span>
+                    </div>
+                    <a href="https://www.datacamp.com/certificate/DEA0019357352059" class="view-cert-btn" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>View Certificate</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SQL Associate -->
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="https://i.ibb.co/GMnGWNt/Screenshot-2024-02-25-003602-removebg-preview.png" alt="SQL Certificate">
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">SQL Associate Certificate</h3>
+                    <p class="cert-issuer">DataCamp</p>
+                    <p class="cert-date">2023 - 2025</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Database</span>
+                        <span class="tech-tag">Query Optimization</span>
+                    </div>
+                    <a href="https://www.datacamp.com/certificate/SQA0014449473810" class="view-cert-btn" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>View Certificate</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- AWS Certificate -->
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="https://i.ibb.co/9tfhVbv/UC-1f939ee7-0180-44d9-8b74-392110b64364.jpg" alt="AWS Certificate">
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">AWS Certified Data Analytics Speciality 2023</h3>
+                    <p class="cert-issuer">Udemy</p>
+                    <p class="cert-date">Nov 2023</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Cloud Computing</span>
+                        <span class="tech-tag">Data Analytics</span>
+                    </div>
+                    <a href="#" class="view-cert-btn" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>View Certificate</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Power BI Certificate -->
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="https://i.ibb.co/R28MZq7/UC-678ca7c8-0765-4e56-8a28-b31753334bad.jpg" alt="Power BI Certificate">
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">Power BI Desktop for Business Intelligence</h3>
+                    <p class="cert-issuer">Maven Analytics</p>
+                    <p class="cert-date">Oct 2023</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">Data Visualization</span>
+                        <span class="tech-tag">Business Intelligence</span>
+                    </div>
+                    <a href="#" class="view-cert-btn" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>View Certificate</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Web Development Certificate -->
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="https://i.ibb.co/9N4FNpp/Coursera-HTML-CSS-and-Javascript-for-Web-Developers-C2-RK9-Y73-R44-C-page-0001.jpg" alt="Web Dev Certificate">
+                </div>
+                <div class="cert-content">
+                    <h3 class="cert-title">Web Development Fundamentals</h3>
+                    <p class="cert-issuer">John Hopkins University (Coursera)</p>
+                    <p class="cert-date">Oct 2020</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <a href="#" class="view-cert-btn" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>View Certificate</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Your existing JavaScript code here
+        });
+
+        // Add scroll animation for the back button
+        document.querySelector('.back-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.history.back();
+        });
+
+        // Add shadow to header on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 0) {
+                header.style.boxShadow = '0 2px 15px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 15px rgba(0,0,0,0.05)';
+            }
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

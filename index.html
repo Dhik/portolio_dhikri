@@ -12,6 +12,7 @@
     
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style_new.css">
@@ -26,9 +27,18 @@
                 <h1>Hi! I'm Dhikri</h1>
                 <h2>I am a Data Analyst, Data Scientist and Software Engineer</h2>
                 <div class="cv-buttons">
-                    <a href="https://dhik.github.io/portolio_dhikri/data_scientist.pdf" class="btn btn-primary">CV Data Scientist</a>
-                    <a href="https://dhik.github.io/portolio_dhikri/data_analyst.pdf" class="btn btn-primary">CV Data Analyst</a>
-                    <a href="https://dhik.github.io/portolio_dhikri/software_engineer.pdf" class="btn btn-primary">CV Software Engineer</a>
+                    <a href="https://dhik.github.io/portolio_dhikri/data_scientist.pdf" class="cv-btn" title="Download Data Scientist CV">
+                        <i class="fas fa-file-download"></i>
+                        <span>Data Scientist</span>
+                    </a>
+                    <a href="https://dhik.github.io/portolio_dhikri/data_analyst.pdf" class="cv-btn" title="Download Data Analyst CV">
+                        <i class="fas fa-file-download"></i>
+                        <span>Data Analyst</span>
+                    </a>
+                    <a href="https://dhik.github.io/portolio_dhikri/software_engineer.pdf" class="cv-btn" title="Download Software Engineer CV">
+                        <i class="fas fa-file-download"></i>
+                        <span>Software Engineer</span>
+                    </a>
                 </div>
             </div>
             <nav class="sidebar-nav">
@@ -42,9 +52,21 @@
             </nav>
 
             <div class="social-links">
-                <a href="mailto:mohammaddhikri@gmail.com" class="social-link"><i class="icon-mail"></i></a>
-                <a href="https://github.com/dhik" class="social-link"><i class="icon-github"></i></a>
-                <a href="https://www.linkedin.com/in/mohammad-dhikri-aba4a61a0/" class="social-link"><i class="icon-linkedin2"></i></a>
+                <a href="mailto:mohammaddhikri@gmail.com" class="social-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Dhik" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mohammad-dhikri/" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://public.tableau.com/app/profile/mohammad.dhikri/vizzes" class="social-link custom-icon" title="Tableau">
+                    <img src="https://i.ibb.co.com/z6sjH1s/tableau-icon-512x505-xj7ykul5.png" alt="Tableau">
+                </a>
+                <a href="https://my.novypro.com/mohammaddhikri" class="social-link custom-icon" title="Power BI">
+                    <img src="https://i.ibb.co.com/ThCgLF1/logo-power-bi-office-data-microsoft-icon-228476.png" alt="Power BI">
+                </a>
             </div>
         </div>
 
@@ -265,21 +287,37 @@
                         <img src="https://i.ibb.co/SXKG2fc/Screenshot-2023-11-05-005710-removebg-preview.png" alt="Data Scientist Certificate">
                         <h3>Data Scientist Professional Certificate</h3>
                         <p>from DataCamp 2023 - 2025</p>
+                        <a href="https://www.datacamp.com/certificate/DS0027146804518" class="credential-btn" target="_blank">
+                            <i class="fas fa-certificate"></i>
+                            <span>See Credentials</span>
+                        </a>
                     </div>
                     <div class="cert-item">
                         <img src="https://i.ibb.co/wYtsNpS/Screenshot-2023-11-05-005652-removebg-preview.png" alt="Data Analyst Certificate">
                         <h3>Data Analyst Professional Certificate</h3>
                         <p>from DataCamp 2023 - 2025</p>
+                        <a href="https://www.datacamp.com/certificate/DA0024420619770" class="credential-btn" target="_blank">
+                            <i class="fas fa-certificate"></i>
+                            <span>See Credentials</span>
+                        </a>
                     </div>
                     <div class="cert-item">
-                        <img src="https://i.ibb.co/x3TB5DH/Screenshot-2024-02-25-003541-removebg-preview.png" alt="Data Analyst Certificate">
+                        <img src="https://i.ibb.co/x3TB5DH/Screenshot-2024-02-25-003541-removebg-preview.png" alt="Data Engineer Certificate">
                         <h3>Data Engineer Associate Certificate</h3>
                         <p>from DataCamp 2023 - 2025</p>
+                        <a href="https://www.datacamp.com/certificate/DEA0019357352059" class="credential-btn" target="_blank">
+                            <i class="fas fa-certificate"></i>
+                            <span>See Credentials</span>
+                        </a>
                     </div>
                     <div class="cert-item">
-                        <img src="https://i.ibb.co/GMnGWNt/Screenshot-2024-02-25-003602-removebg-preview.png" alt="Data Analyst Certificate">
+                        <img src="https://i.ibb.co/GMnGWNt/Screenshot-2024-02-25-003602-removebg-preview.png" alt="SQL Certificate">
                         <h3>SQL Associate Certificate</h3>
                         <p>from DataCamp 2023 - 2025</p>
+                        <a href="https://www.datacamp.com/certificate/SQA0014449473810" class="credential-btn" target="_blank">
+                            <i class="fas fa-certificate"></i>
+                            <span>See Credentials</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -403,19 +441,40 @@
             <div id="education" class="content-section">
                 <h2>Education</h2>
                 <div class="education-card">
-                    <div class="education-image">
-                        <img src="images/logo.png" alt="Padjadjaran University" />
+                    <div class="education-header">
+                        <div class="education-logo">
+                            <img src="images/logo.png" alt="Padjadjaran University" />
+                        </div>
+                        <div class="education-meta">
+                            <h3>Padjadjaran University</h3>
+                            <div class="education-period">
+                                <i class="fas fa-calendar-alt"></i>
+                                August 2018 - January 2022
+                            </div>
+                        </div>
                     </div>
-                    <div class="education-content">
-                        <h3>Padjadjaran University</h3>
-                        <span class="education-period">(Graduated) 08/2018 - 01/2022</span>
-                        <div class="education-degree">Bachelor of Computer Science (BsCs)</div>
-                        <div class="education-gpa">3.65 GPA</div>
-                        <div class="education-details">
-                            <ul>
-                                <li>Major in Artificial Intelligence</li>
-                                <li>Minor in Information System</li>
-                            </ul>
+                    
+                    <div class="education-details">
+                        <div class="degree-info">
+                            <div class="degree">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Bachelor of Computer Science (BsCs)</span>
+                            </div>
+                            <div class="gpa">
+                                <i class="fas fa-star"></i>
+                                <span>GPA: 3.65/4.00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="education-focus">
+                            <div class="focus-item">
+                                <span class="focus-label">Major:</span>
+                                <span class="focus-value">Artificial Intelligence</span>
+                            </div>
+                            <div class="focus-item">
+                                <span class="focus-label">Minor:</span>
+                                <span class="focus-value">Information System</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -436,9 +495,13 @@
                                 <span class="tech-tag">Data Visualization</span>
                                 <span class="tech-tag">Analytics</span>
                             </div>
+                            <a href="https://my.novypro.com/mohammaddhikri" class="see-more-btn">
+                                <span>See More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
-
+                
                     <div class="platform-card">
                         <div class="platform-image">
                             <img src="images/projects/tablea.png" alt="Tableau" />
@@ -450,9 +513,13 @@
                                 <span class="tech-tag">Data Visualization</span>
                                 <span class="tech-tag">Business Intelligence</span>
                             </div>
+                            <a href="https://public.tableau.com/app/profile/mohammad.dhikri/vizzes" class="see-more-btn">
+                                <span>See More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
-
+                
                     <div class="platform-card">
                         <div class="platform-image">
                             <img src="images/projects/github.png" alt="GitHub" />
@@ -464,9 +531,13 @@
                                 <span class="tech-tag">Code</span>
                                 <span class="tech-tag">Open Source</span>
                             </div>
+                            <a href="https://github.com/Dhik" class="see-more-btn">
+                                <span>See More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
-
+                
                     <div class="platform-card">
                         <div class="platform-image">
                             <img src="images/projects/datacamp.png" alt="DataCamp" />
@@ -478,6 +549,10 @@
                                 <span class="tech-tag">Certification</span>
                                 <span class="tech-tag">Data Science</span>
                             </div>
+                            <a href="https://www.datacamp.com/portfolio/mohammaddhikriskom" class="see-more-btn">
+                                <span>See More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -580,6 +655,13 @@
                                 <span class="tech-tag">JavaScript</span>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="section-footer">
+                        <a href="learning.html" class="section-see-more">
+                            <span>See More Learning Journey</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
