@@ -1501,3 +1501,156 @@ body {
         height: 180px;
     }
 }
+
+
+/* Skills Section Container */
+#skills.content-section {
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+#skills h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* Skills Category Styling */
+.skills-category {
+    margin-bottom: 40px;
+}
+
+.skills-category:last-child {
+    margin-bottom: 0;
+}
+
+.skills-category h3 {
+    color: #2c98f0;
+    font-size: 20px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Skills Logo Grid */
+.skills-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+/* Individual Skill Logo Item */
+.skill-logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 15px;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+.skill-logo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(44, 152, 240, 0.15);
+    border-color: #2c98f0;
+}
+
+.skill-logo-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.skill-logo-item:hover img {
+    transform: scale(1.1);
+}
+
+.skill-logo-item span {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Machine Learning & AI Section */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 5px;
+}
+
+.tech-tag {
+    background: #f0f7ff;
+    color: #2c98f0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    background: #2c98f0;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .skills-logo-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .skills-logo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #skills.content-section {
+        padding: 20px;
+    }
+
+    .skills-logo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 15px;
+    }
+
+    .skill-logo-item {
+        padding: 15px 10px;
+    }
+
+    .skill-logo-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skill-logo-item span {
+        font-size: 12px;
+    }
+
+    .tech-tag {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
