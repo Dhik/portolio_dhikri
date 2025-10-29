@@ -1,0 +1,871 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DiabetCare - AI Health Management Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-section p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .project-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px 30px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            border: 2px solid white;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section {
+            background: white;
+            padding: 50px;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: #667eea;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .section h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .feature-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .tech-tag {
+            background: #f0f0f0;
+            color: #333;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease;
+        }
+
+        .tech-tag:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .architecture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .architecture-item {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .architecture-item h4 {
+            color: #667eea;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .architecture-item ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .architecture-item li {
+            padding: 8px 0;
+            color: #555;
+            display: flex;
+            align-items: center;
+        }
+
+        .architecture-item li:before {
+            content: '✓';
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+
+        .impact-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .impact-card {
+            background: white;
+            border: 2px solid #667eea;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .impact-card:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .impact-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .impact-card:hover .impact-number {
+            color: white;
+        }
+
+        .impact-text {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-section h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .cta-btn {
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+        }
+
+        .cta-btn-primary {
+            background: white;
+            color: #667eea;
+            border: 2px solid white;
+        }
+
+        .cta-btn-primary:hover {
+            background: transparent;
+            color: white;
+        }
+
+        .cta-btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .cta-btn-secondary:hover {
+            background: white;
+            color: #667eea;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery-item {
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: #ddd;
+        }
+
+        .gallery-item-content {
+            padding: 20px;
+        }
+
+        .gallery-item h4 {
+            color: #333;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .gallery-item p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .team-section {
+            text-align: center;
+        }
+
+        .team-info {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .team-info p {
+            font-size: 1.05rem;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .future-roadmap {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .roadmap-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .roadmap-item:last-child {
+            border-bottom: none;
+        }
+
+        .roadmap-icon {
+            color: #667eea;
+            margin-right: 15px;
+            font-size: 1.3rem;
+            min-width: 30px;
+        }
+
+        .roadmap-content h4 {
+            color: #333;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .roadmap-content p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #667eea;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .hero-section p {
+                font-size: 1.1rem;
+            }
+
+            .section {
+                padding: 30px 20px;
+            }
+
+            .section h2 {
+                font-size: 1.8rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .cta-btn {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="project-badge">
+                <i class="fas fa-heart"></i> Healthcare Innovation
+            </div>
+            <h1>DiabetCare</h1>
+            <p>An AI-Powered Diabetes Management Platform with Intelligent Nutrition Analysis, Personalized Recipe Generation, and Expert Health Chatbot</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/Dhik/diabetcare" class="cta-btn cta-btn-primary" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="#features" class="cta-btn cta-btn-secondary">
+                    Explore Features <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Project Overview -->
+        <div class="section">
+            <h2>Project Overview</h2>
+            <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 20px;">
+                DiabetCare is a comprehensive Django-based health management platform designed specifically for diabetes patients. 
+                The application leverages artificial intelligence to provide personalized nutrition analysis, AI-generated diabetes-friendly recipes, 
+                and an intelligent chatbot for expert health guidance. Built with a focus on Indonesian healthcare standards, DiabetCare empowers users 
+                to make informed dietary choices while tracking their health metrics in one integrated platform.
+            </p>
+            
+            <div class="impact-cards">
+                <div class="impact-card">
+                    <div class="impact-number">8+</div>
+                    <div class="impact-text">Core Features</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">AI-Powered</div>
+                    <div class="impact-text">Nutrition Analysis</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">Real-time</div>
+                    <div class="impact-text">Health Tracking</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">100%</div>
+                    <div class="impact-text">User-Centric</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Features -->
+        <div class="section" id="features">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-camera"></i>
+                    <h4>Nutrition Analysis</h4>
+                    <p>AI-powered OCR extracts food composition from product images and provides detailed nutritional analysis using OpenAI's GPT-3.5-turbo with Indonesian healthcare standards.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-utensils"></i>
+                    <h4>Recipe Generator</h4>
+                    <p>Creates personalized, budget-friendly diabetes-friendly recipes based on available ingredients, dietary preferences, and user health profile.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-robot"></i>
+                    <h4>Expert Chatbot</h4>
+                    <p>Dr. DiabetCare - an intelligent chatbot that provides evidence-based diabetes management advice with conversation history and personalized recommendations.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Health Dashboard</h4>
+                    <p>Comprehensive real-time monitoring of blood sugar levels, weight, blood pressure, physical activity, and food consumption with visual analytics.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-user-md"></i>
+                    <h4>Diabetes Assessment</h4>
+                    <p>Specialized food analysis for diabetes management with glycemic index estimation and personalized portioning recommendations for safe consumption.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-history"></i>
+                    <h4>Health History</h4>
+                    <p>Track and maintain comprehensive health logs including nutrition analyses, recipes, chatbot conversations, and health metrics over time.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Architecture -->
+        <div class="section">
+            <h2>Technical Architecture</h2>
+            <p style="margin-bottom: 25px; color: #555;">DiabetCare is built with a modern, scalable architecture combining powerful backend capabilities with intelligent AI integration.</p>
+            
+            <div class="architecture-grid">
+                <div class="architecture-item">
+                    <h4><i class="fas fa-server"></i> Backend Stack</h4>
+                    <ul>
+                        <li>Django 4.x REST API</li>
+                        <li>PostgreSQL Database</li>
+                        <li>Django ORM & Migrations</li>
+                        <li>JWT Authentication</li>
+                        <li>RESTful API Design</li>
+                    </ul>
+                </div>
+                <div class="architecture-item">
+                    <h4><i class="fas fa-brain"></i> AI & ML Integration</h4>
+                    <ul>
+                        <li>OpenAI GPT-3.5-turbo</li>
+                        <li>Natural Language Processing</li>
+                        <li>Health Data Analysis</li>
+                        <li>Prompt Engineering</li>
+                        <li>JSON Response Processing</li>
+                    </ul>
+                </div>
+                <div class="architecture-item">
+                    <h4><i class="fas fa-database"></i> Data Models</h4>
+                    <ul>
+                        <li>UserProfile Management</li>
+                        <li>NutritionAnalysis Storage</li>
+                        <li>Recipe Database</li>
+                        <li>ChatMessage History</li>
+                        <li>HealthLog Tracking</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Technology Stack</h3>
+            <div class="tech-stack">
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">OpenAI API</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Git</span>
+            </div>
+        </div>
+
+        <!-- Key Functionalities -->
+        <div class="section">
+            <h2>Core Functionalities</h2>
+            
+            <h3>1. Nutrition Image Analysis</h3>
+            <p>Users upload food product images, which are processed to extract text from nutrition labels. The extracted information is sent to OpenAI GPT-3.5-turbo for comprehensive analysis including:</p>
+            <div class="tech-stack">
+                <span class="tech-tag">OCR Text Extraction</span>
+                <span class="tech-tag">Nutritional Breakdown</span>
+                <span class="tech-tag">Health Rating (1-10)</span>
+                <span class="tech-tag">Allergen Detection</span>
+                <span class="tech-tag">Age Suitability</span>
+                <span class="tech-tag">Consumption Recommendations</span>
+            </div>
+
+            <h3 style="margin-top: 30px;">2. Diabetes-Specific Analysis</h3>
+            <p>Food products are analyzed specifically for diabetes compatibility with features like:</p>
+            <div class="tech-stack">
+                <span class="tech-tag">Glycemic Index Estimation</span>
+                <span class="tech-tag">Sugar Content Analysis</span>
+                <span class="tech-tag">Fiber Content Evaluation</span>
+                <span class="tech-tag">Safe Portion Sizing</span>
+                <span class="tech-tag">Blood Sugar Impact Prediction</span>
+                <span class="tech-tag">Diabetes Compatibility Score</span>
+            </div>
+
+            <h3 style="margin-top: 30px;">3. Personalized Recipe Generation</h3>
+            <p>AI generates budget-conscious, diabetes-friendly recipes with:</p>
+            <div class="tech-stack">
+                <span class="tech-tag">Budget-Based Filtering</span>
+                <span class="tech-tag">Ingredient Matching</span>
+                <span class="tech-tag">Nutritional Calculations</span>
+                <span class="tech-tag">Cooking Instructions</span>
+                <span class="tech-tag">Glycemic Index Targeting</span>
+                <span class="tech-tag">Difficulty Assessment</span>
+            </div>
+
+            <h3 style="margin-top: 30px;">4. AI Health Chatbot</h3>
+            <p>Dr. DiabetCare provides:</p>
+            <div class="tech-stack">
+                <span class="tech-tag">Evidence-Based Guidance</span>
+                <span class="tech-tag">Conversation Memory</span>
+                <span class="tech-tag">Personalized Context</span>
+                <span class="tech-tag">Indonesian Healthcare Standards</span>
+                <span class="tech-tag">Medical Accuracy</span>
+                <span class="tech-tag">Empathetic Responses</span>
+            </div>
+        </div>
+
+        <!-- Indonesian Healthcare Compliance -->
+        <div class="section">
+            <h2>Indonesian Healthcare Compliance</h2>
+            <p style="margin-bottom: 20px;">DiabetCare is specifically designed with Indonesian healthcare standards in mind:</p>
+            <div class="architecture-grid">
+                <div class="architecture-item">
+                    <h4>BPOM Compliance</h4>
+                    <p>Follows Indonesian Health Ministry (Permenkes) and BPOM regulations for nutrition information and food safety standards.</p>
+                </div>
+                <div class="architecture-item">
+                    <h4>Localized Nutrition</h4>
+                    <p>Considers Indonesian dietary habits, local ingredient availability, and culturally-appropriate dietary recommendations.</p>
+                </div>
+                <div class="architecture-item">
+                    <h4>Indonesian Language</h4>
+                    <p>All AI responses, nutrition analysis, and recipe guidance provided in Bahasa Indonesia with familiar nutrition terminology.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Benefits -->
+        <div class="section">
+            <h2>Benefits for Users</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Informed Choices</h4>
+                    <p>Make better dietary decisions with instant AI-powered nutrition analysis of any food product.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Budget-Friendly</h4>
+                    <p>Generate affordable, healthy recipes within your budget constraints.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Expert Guidance</h4>
+                    <p>24/7 access to diabetes management advice from an AI health expert.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Comprehensive Tracking</h4>
+                    <p>Monitor blood sugar, weight, activity, and nutrition all in one place.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Personalization</h4>
+                    <p>Recommendations tailored to your health profile and lifestyle.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Peace of Mind</h4>
+                    <p>Empowering diabetes management that helps prevent complications.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta-section">
+            <h3>Ready to Explore DiabetCare?</h3>
+            <p style="font-size: 1.1rem; margin-bottom: 0;">Check out the complete source code and contribute to improving diabetes management in Indonesia.</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/Dhik/diabetcare" class="cta-btn cta-btn-primary" target="_blank">
+                    <i class="fab fa-github"></i> View Repository
+                </a>
+                <a href="mailto:mohammaddhikri@gmail.com" class="cta-btn cta-btn-secondary">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+            </div>
+        </div>
+
+        <!-- App Screenshots -->
+        <div class="section">
+            <h2>App Screenshots</h2>
+            <p style="margin-bottom: 30px; color: #555;">Take a visual tour through DiabetCare's intuitive interface designed for seamless diabetes management.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://dhik.github.io/portolio_dhikri/images/diabetcare/1761738180106_image.png" alt="Dashboard Overview">
+                    <div class="gallery-item-content">
+                        <h4>Dashboard Overview</h4>
+                        <p>Main dashboard with health metrics, recent analysis, and quick actions</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://dhik.github.io/portolio_dhikri/images/diabetcare/screenshot-nutrition.png" alt="Nutrition Analysis">
+                    <div class="gallery-item-content">
+                        <h4>Nutrition Analysis</h4>
+                        <p>AI-powered food analysis with detailed nutritional breakdown</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://dhik.github.io/portolio_dhikri/images/diabetcare/screenshot-recipe.png" alt="Recipe Generator">
+                    <div class="gallery-item-content">
+                        <h4>Recipe Generator</h4>
+                        <p>Personalized diabetes-friendly recipe recommendations</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://dhik.github.io/portolio_dhikri/images/diabetcare/screenshot-chatbot.png" alt="Health Chatbot">
+                    <div class="gallery-item-content">
+                        <h4>Health Chatbot</h4>
+                        <p>Dr. DiabetCare providing real-time health guidance</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://dhik.github.io/portolio_dhikri/images/diabetcare/screenshot-profile.png" alt="User Profile">
+                    <div class="gallery-item-content">
+                        <h4>User Profile</h4>
+                        <p>Comprehensive health profile with BMI calculation and tracking</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://dhik.github.io/portolio_dhikri/images/diabetcare/screenshot-health-log.png" alt="Health Log">
+                    <div class="gallery-item-content">
+                        <h4>Health Log</h4>
+                        <p>Track blood sugar, weight, blood pressure, and activities</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://dhik.github.io/portolio_dhikri/images/diabetcare/screenshot-history.png" alt="Analysis History">
+                    <div class="gallery-item-content">
+                        <h4>Analysis History</h4>
+                        <p>Complete history of nutrition analyses and recommendations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Future Roadmap -->
+        <div class="section">
+            <h2>Future Roadmap</h2>
+            <div class="future-roadmap">
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <h4>Mobile Application</h4>
+                        <p>Native iOS and Android apps with offline functionality and push notifications for medication reminders.</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <h4>Wearable Integration</h4>
+                        <p>Integration with fitness trackers and continuous glucose monitors (CGM) for real-time data synchronization.</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <h4>Community Features</h4>
+                        <p>Connect with other diabetes patients, share recipes, and access community-driven health insights.</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">
+                        <i class="fas fa-hospital-user"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <h4>Healthcare Provider Integration</h4>
+                        <p>Allow patients to share health data with their doctors and receive professional medical guidance within the platform.</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <h4>Advanced ML Models</h4>
+                        <p>Custom machine learning models for diabetes risk prediction and personalized dietary recommendations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://github.com/Dhik/diabetcare" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://dhik.github.io/portolio_dhikri/" target="_blank">
+                    <i class="fas fa-portfolio"></i> Portfolio
+                </a>
+                <a href="mailto:mohammaddhikri@gmail.com">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://www.linkedin.com/in/mohammad-dhikri/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i> LinkedIn
+                </a>
+            </div>
+            <p>&copy; 2025 DiabetCare. Developed by Mohammad Dhikri. All rights reserved.</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">An AI-powered diabetes management platform built to empower healthy living in Indonesia.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Smooth scroll to sections
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
